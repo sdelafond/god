@@ -1,0 +1,56 @@
+ruby-god (0.12.1-1) unstable; urgency=low
+
+  * New upstream release
+  * New ruby policy (gem2deb), with new package name
+  * Bumped up Standards-Version.
+  * Source format 3.0 (quilt)
+
+ -- Sebastien Delafond <seb@debian.org>  Mon, 14 May 2012 14:18:22 +0200
+
+god (0.7.18-3) unstable; urgency=low
+
+  * recover lost patch related to rubygems (Closes: #651088)
+  * lintian fixes
+
+ -- Sebastien Delafond <seb@debian.org>  Thu, 22 Dec 2011 18:02:57 +0100
+
+god (0.7.18-2) unstable; urgency=low
+
+  * Don't depend on rubygems; thanks to Andre Ferraz
+    <deferraz@terra.com.br> for the patch (Closes: #629542).
+
+ -- Sebastien Delafond <seb@debian.org>  Fri, 10 Jun 2011 17:47:23 +0200
+
+god (0.7.18-1) unstable; urgency=low
+
+  * New upstream release.
+  * Updated watch file.
+  * Bumped up Standards-Version.
+
+ -- Sebastien Delafond <seb@debian.org>  Sun, 21 Feb 2010 14:52:42 +0100
+
+god (0.7.13-3) unstable; urgency=low
+
+  * Really depend on rubygems (Closes: #562447).
+
+ -- Sebastien Delafond <seb@debian.org>  Fri, 25 Dec 2009 09:14:19 +0100
+
+god (0.7.13-2) unstable; urgency=low
+
+  * Depend on rubygems (Closes: #551580).
+  * Bumped up Standards revision.
+
+ -- Sebastien Delafond <seb@debian.org>  Mon, 19 Oct 2009 10:56:51 +0200
+
+god (0.7.13-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bumped up standards revision.
+
+ -- Sebastien Delafond <seb@debian.org>  Thu, 13 Aug 2009 19:52:12 +0200
+
+god (0.7.12-1) unstable; urgency=low
+
+  * Initial Release (Closes: #523736).
+
+ -- Sebastien Delafond <seb@debian.org>  Sun, 12 Apr 2009 05:03:24 -0700
