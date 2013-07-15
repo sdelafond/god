@@ -1,3 +1,11 @@
+ruby-god (0.13.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update debian/watch file for uupdate.
+  * Bumped-up Standards-Version.
+
+ -- Sebastien Delafond <seb@debian.org>  Mon, 15 Jul 2013 14:35:24 +0200
+
 ruby-god (0.12.1-1) unstable; urgency=low
 
   * New upstream release
