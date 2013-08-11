@@ -1,13 +1,12 @@
 --- !ruby/object:Gem::Specification 
 name: god
 version: !ruby/object:Gem::Version 
-  hash: 45
-  prerelease: 
+  prerelease: false
   segments: 
   - 0
-  - 12
-  - 1
-  version: 0.12.1
+  - 13
+  - 2
+  version: 0.13.2
 platform: ruby
 authors: 
 - Tom Preston-Werner
@@ -17,191 +16,167 @@ autorequire:
 bindir: bin
 cert_chain: []
 
-date: 2012-01-21 00:00:00 -08:00
+date: 2013-02-26 00:00:00 -08:00
 default_executable: 
 dependencies: 
 - !ruby/object:Gem::Dependency 
-  prerelease: false
-  requirement: &id001 !ruby/object:Gem::Requirement 
-    none: false
+  type: :development
+  version_requirements: &id001 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 3
         segments: 
         - 1
         - 6
         version: "1.6"
-  type: :development
   name: json
-  version_requirements: *id001
-- !ruby/object:Gem::Dependency 
+  requirement: *id001
   prerelease: false
-  requirement: &id002 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id002 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 25
         segments: 
         - 0
         - 9
         version: "0.9"
-  type: :development
   name: rake
-  version_requirements: *id002
-- !ruby/object:Gem::Dependency 
+  requirement: *id002
   prerelease: false
-  requirement: &id003 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id003 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 19
         segments: 
         - 3
         - 10
         version: "3.10"
-  type: :development
   name: rdoc
-  version_requirements: *id003
-- !ruby/object:Gem::Dependency 
+  requirement: *id003
   prerelease: false
-  requirement: &id004 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id004 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 3
         segments: 
         - 2
         - 0
         version: "2.0"
-  type: :development
   name: twitter
-  version_requirements: *id004
-- !ruby/object:Gem::Dependency 
+  requirement: *id004
   prerelease: false
-  requirement: &id005 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id005 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 13
         segments: 
         - 0
         - 3
         version: "0.3"
-  type: :development
   name: prowly
-  version_requirements: *id005
-- !ruby/object:Gem::Dependency 
+  requirement: *id005
   prerelease: false
-  requirement: &id006 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id006 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 1
         segments: 
         - 0
         - 5
         version: "0.5"
-  type: :development
   name: xmpp4r
-  version_requirements: *id006
-- !ruby/object:Gem::Dependency 
+  requirement: *id006
   prerelease: false
-  requirement: &id007 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id007 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 25
         segments: 
         - 0
         - 0
         - 3
         version: 0.0.3
-  type: :development
   name: dike
-  version_requirements: *id007
-- !ruby/object:Gem::Dependency 
+  requirement: *id007
   prerelease: false
-  requirement: &id008 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id008 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 15
         segments: 
         - 1
         - 0
         version: "1.0"
-  type: :development
   name: snapshot
-  version_requirements: *id008
-- !ruby/object:Gem::Dependency 
+  requirement: *id008
   prerelease: false
-  requirement: &id009 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id009 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 25
         segments: 
         - 0
         - 9
         version: "0.9"
-  type: :development
   name: rcov
-  version_requirements: *id009
-- !ruby/object:Gem::Dependency 
+  requirement: *id009
   prerelease: false
-  requirement: &id010 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id010 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 13
         segments: 
         - 1
         - 1
         version: "1.1"
-  type: :development
   name: daemons
-  version_requirements: *id010
-- !ruby/object:Gem::Dependency 
+  requirement: *id010
   prerelease: false
-  requirement: &id011 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id011 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 31
         segments: 
         - 0
         - 10
         version: "0.10"
-  type: :development
   name: mocha
-  version_requirements: *id011
-- !ruby/object:Gem::Dependency 
+  requirement: *id011
   prerelease: false
-  requirement: &id012 !ruby/object:Gem::Requirement 
-    none: false
+- !ruby/object:Gem::Dependency 
+  type: :development
+  version_requirements: &id012 !ruby/object:Gem::Requirement 
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
-        hash: 25
         segments: 
         - 1
         - 3
         - 1
         version: 1.3.1
-  type: :development
   name: gollum
-  version_requirements: *id012
+  requirement: *id012
+  prerelease: false
 description: An easy to configure, easy to extend monitoring framework written in Ruby.
 email: god-rb@googlegroups.com
 executables: 
@@ -241,6 +216,7 @@ files:
 - lib/god/conditions/degrading_lambda.rb
 - lib/god/conditions/disk_usage.rb
 - lib/god/conditions/file_mtime.rb
+- lib/god/conditions/file_touched.rb
 - lib/god/conditions/flapping.rb
 - lib/god/conditions/http_response_code.rb
 - lib/god/conditions/lambda.rb
@@ -349,27 +325,23 @@ require_paths:
 - lib
 - ext
 required_ruby_version: !ruby/object:Gem::Requirement 
-  none: false
   requirements: 
   - - ">="
     - !ruby/object:Gem::Version 
-      hash: 3
       segments: 
       - 0
       version: "0"
 required_rubygems_version: !ruby/object:Gem::Requirement 
-  none: false
   requirements: 
   - - ">="
     - !ruby/object:Gem::Version 
-      hash: 3
       segments: 
       - 0
       version: "0"
 requirements: []
 
 rubyforge_project: god
-rubygems_version: 1.6.2
+rubygems_version: 1.3.6
 signing_key: 
 specification_version: 2
 summary: Process monitoring framework.
