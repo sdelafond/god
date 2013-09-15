@@ -14,8 +14,8 @@ Architecture: any
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
 Provides: god
-Replaces: god
-Breaks: god
+Replaces: god (<< 0.13.2-3)
+Breaks: god (<< 0.13.2-3)
 Description: Fully configurable process monitoring
  God is an easy to configure, easy to extend monitoring framework
  written in Ruby.
@@ -25,7 +25,9 @@ Description: Fully configurable process monitoring
  powerful monitoring application available.
 
 Package: god
-Architecture: any
+Architecture: all
+Priority: extra
+Section: oldlibs
 Depends: ruby-god
 Description: Fully configurable process monitoring
  God is an easy to configure, easy to extend monitoring framework
