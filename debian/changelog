@@ -1,3 +1,12 @@
+ruby-god (0.13.2-4) unstable; urgency=low
+
+  * Lintian fixes
+  * Disable tests, since they're not only failing, but also causing the
+    buildds to spin until they timeout (Closes: #719498, #697079)
+  * Versioned replace/break on god (Closes: #722658)
+
+ -- Sebastien Delafond <seb@debian.org>  Sun, 15 Sep 2013 19:24:03 +0200
+
 ruby-god (0.13.2-3) unstable; urgency=low
 
   * Add binary transition package for god
