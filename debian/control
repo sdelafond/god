@@ -29,10 +29,12 @@ Architecture: all
 Priority: extra
 Section: oldlibs
 Depends: ruby-god
-Description: Fully configurable process monitoring
+Description: Fully configurable process monitoring (transitional package)
  God is an easy to configure, easy to extend monitoring framework
  written in Ruby.
  .
  Keeping your server processes and tasks running should be a simple
  part of your deployment process. God aims to be the simplest, most
  powerful monitoring application available.
+ .
+ This is an empty package meant for transition.
