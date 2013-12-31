@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
 
   s.name = 'god'
-  s.version = '0.13.2'
-  s.date = '2013-02-26'
+  s.version = '0.13.3'
+  s.date = '2013-09-25'
 
   s.summary = "Process monitoring framework."
   s.description = "An easy to configure, easy to extend monitoring framework written in Ruby."
@@ -24,18 +24,19 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w[README.md]
 
   s.add_development_dependency('json', '~> 1.6')
-  s.add_development_dependency('rake', '~> 0.9')
+  s.add_development_dependency('rake')
   s.add_development_dependency('rdoc', '~> 3.10')
-  s.add_development_dependency('twitter', '~> 2.0')
+  s.add_development_dependency('twitter', '~> 4.0')
   s.add_development_dependency('prowly', '~> 0.3')
   s.add_development_dependency('xmpp4r', '~> 0.5')
   s.add_development_dependency('dike', '~> 0.0.3')
-  s.add_development_dependency('snapshot', '~> 1.0')
   s.add_development_dependency('rcov', '~> 0.9')
   s.add_development_dependency('daemons', '~> 1.1')
   s.add_development_dependency('mocha', '~> 0.10')
   s.add_development_dependency('gollum', '~> 1.3.1')
-
+  s.add_development_dependency('airbrake', '~> 3.1.7')
+  s.add_development_dependency('nokogiri', '~> 1.5.0')
+  s.add_development_dependency('activesupport', [ '>= 2.3.10', '< 4.0.0' ])
   # = MANIFEST =
   s.files = %w[
     Announce.txt
@@ -79,6 +80,7 @@ Gem::Specification.new do |s|
     lib/god/conditions/tries.rb
     lib/god/configurable.rb
     lib/god/contact.rb
+    lib/god/contacts/airbrake.rb
     lib/god/contacts/campfire.rb
     lib/god/contacts/email.rb
     lib/god/contacts/jabber.rb
@@ -137,6 +139,7 @@ Gem::Specification.new do |s|
     test/configs/test.rb
     test/helper.rb
     test/suite.rb
+    test/test_airbrake.rb
     test/test_behavior.rb
     test/test_campfire.rb
     test/test_condition.rb

@@ -25,7 +25,7 @@ EOF
 end
 
 begin
-  require 'mocha'
+  require 'mocha/setup'
 rescue LoadError
   unless gems ||= false
     require 'rubygems'
@@ -96,16 +96,24 @@ ensure
   $VERBOSE = old_verbose
 end
 
-LOG.instance_variable_set(:@io, StringIO.new('/dev/null'))
+LOG.instance_variable_set(:@io, StringIO.new())
 
-module Kernel
-  def abort(text)
-    raise SystemExit
-  end
-  def exit(code)
-    raise SystemExit
-  end
+def output_logs
+  io = LOG.instance_variable_get(:@io)
+  LOG.instance_variable_set(:@io, $stderr)
+  yield
+ensure
+  LOG.instance_variable_set(:@io, io)
 end
+
+# module Kernel
+#   def abort(text)
+#     raise SystemExit, text
+#   end
+#   def exit(code)
+#     raise SystemExit, "Exit code: #{code}"
+#   end
+# end
 
 module Test::Unit::Assertions
   def assert_abort
@@ -141,5 +149,19 @@ class Object
 
   def bypass
     Bypass.new(self)
+  end
+end
+
+# Make sure we return valid exit codes
+if defined?(RUBY_ENGINE) && RUBY_ENGINE == "ruby" && RUBY_VERSION >= "1.9"
+  module Kernel
+    alias :__at_exit :at_exit
+    def at_exit(&block)
+      __at_exit do
+        exit_status = $!.status if $!.is_a?(SystemExit)
+        block.call
+        exit exit_status if exit_status
+      end
+    end
   end
 end

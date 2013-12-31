@@ -642,6 +642,19 @@ $ sudo god stop mongrels
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
+Invoke Commands for all watches
+-------------------------------
+
+If you need to invoke a command (e.g. Stop / Start / Restart) on all watches
+you can simply omit the second parameter. For example, to start all watches:
+
+```terminal
+$ sudo god start
+```
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
 Redirecting STDOUT and STDERR of your Process
 ---------------------------------------------
 
@@ -1186,6 +1199,25 @@ end
 url    - The String webhook URL.
 format - The Symbol format [ :form | :json ] (default: :form).
 
+```
+
+Airbrake
+~~~~~~~
+
+Send a notice to airbrake (http://airbrake.io/).
+
+```ruby
+God::Contacts::Airbrake.defaults do |d|
+  ...
+end
+
+God.contact(:airbrake) do |c|
+  ...
+end
+```
+
+```
+apikey - The String API key.
 ```
 
 /////////////////////////////////////////////////////////////////////////////
