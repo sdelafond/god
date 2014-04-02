@@ -1,3 +1,9 @@
+ruby-god (0.13.4-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Sebastien Delafond <seb@debian.org>  Wed, 02 Apr 2014 13:19:22 +0200
+
 ruby-god (0.13.3-1) unstable; urgency=low
 
   * New upstream release
