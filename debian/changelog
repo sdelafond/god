@@ -1,3 +1,9 @@
+ruby-god (0.13.4-2) unstable; urgency=medium
+
+  * Fix lintian warning about no Misc:depends
+
+ -- Sebastien Delafond <seb@debian.org>  Thu, 25 Sep 2014 13:44:47 +0200
+
 ruby-god (0.13.4-1) unstable; urgency=low
 
   * New upstream version
