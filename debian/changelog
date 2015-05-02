@@ -1,3 +1,14 @@
+ruby-god (0.13.6-1~1.gbpeb6e4b) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @eb6e4b6383dab10f4f449945cbead73d976315f9 **
+
+  [ Sébastien Delafond ]
+  * Imported Upstream version 0.13.6
+
+  [ Sebastien Delafond ]
+
+ -- Sébastien Delafond <sdelafond@gmail.com>  Sat, 02 May 2015 13:47:29 +0200
+
 ruby-god (0.13.4-2) unstable; urgency=medium
 
   * Fix lintian warning about no Misc:depends
