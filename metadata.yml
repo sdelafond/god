@@ -1,13 +1,13 @@
 --- !ruby/object:Gem::Specification 
 name: god
 version: !ruby/object:Gem::Version 
-  hash: 35
+  hash: 39
   prerelease: 
   segments: 
   - 0
   - 13
-  - 4
-  version: 0.13.4
+  - 6
+  version: 0.13.6
 platform: ruby
 authors: 
 - Tom Preston-Werner
@@ -17,7 +17,7 @@ autorequire:
 bindir: bin
 cert_chain: []
 
-date: 2014-03-05 00:00:00 -08:00
+date: 2015-03-21 00:00:00 -07:00
 default_executable: 
 dependencies: 
 - !ruby/object:Gem::Dependency 
@@ -53,6 +53,20 @@ dependencies:
   version_requirements: &id003 !ruby/object:Gem::Requirement 
     none: false
     requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  prerelease: false
+  requirement: *id003
+  name: minitest
+  type: :development
+- !ruby/object:Gem::Dependency 
+  version_requirements: &id004 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
         hash: 19
@@ -61,11 +75,11 @@ dependencies:
         - 10
         version: "3.10"
   prerelease: false
-  requirement: *id003
+  requirement: *id004
   name: rdoc
   type: :development
 - !ruby/object:Gem::Dependency 
-  version_requirements: &id004 !ruby/object:Gem::Requirement 
+  version_requirements: &id005 !ruby/object:Gem::Requirement 
     none: false
     requirements: 
     - - ~>
@@ -76,11 +90,11 @@ dependencies:
         - 0
         version: "4.0"
   prerelease: false
-  requirement: *id004
+  requirement: *id005
   name: twitter
   type: :development
 - !ruby/object:Gem::Dependency 
-  version_requirements: &id005 !ruby/object:Gem::Requirement 
+  version_requirements: &id006 !ruby/object:Gem::Requirement 
     none: false
     requirements: 
     - - ~>
@@ -91,11 +105,11 @@ dependencies:
         - 3
         version: "0.3"
   prerelease: false
-  requirement: *id005
+  requirement: *id006
   name: prowly
   type: :development
 - !ruby/object:Gem::Dependency 
-  version_requirements: &id006 !ruby/object:Gem::Requirement 
+  version_requirements: &id007 !ruby/object:Gem::Requirement 
     none: false
     requirements: 
     - - ~>
@@ -106,11 +120,11 @@ dependencies:
         - 5
         version: "0.5"
   prerelease: false
-  requirement: *id006
+  requirement: *id007
   name: xmpp4r
   type: :development
 - !ruby/object:Gem::Dependency 
-  version_requirements: &id007 !ruby/object:Gem::Requirement 
+  version_requirements: &id008 !ruby/object:Gem::Requirement 
     none: false
     requirements: 
     - - ~>
@@ -122,23 +136,8 @@ dependencies:
         - 3
         version: 0.0.3
   prerelease: false
-  requirement: *id007
-  name: dike
-  type: :development
-- !ruby/object:Gem::Dependency 
-  version_requirements: &id008 !ruby/object:Gem::Requirement 
-    none: false
-    requirements: 
-    - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 25
-        segments: 
-        - 0
-        - 9
-        version: "0.9"
-  prerelease: false
   requirement: *id008
-  name: rcov
+  name: dike
   type: :development
 - !ruby/object:Gem::Dependency 
   version_requirements: &id009 !ruby/object:Gem::Requirement 
@@ -192,6 +191,30 @@ dependencies:
     requirements: 
     - - ~>
       - !ruby/object:Gem::Version 
+        hash: 403
+        segments: 
+        - 0
+        - 99
+        - 0
+        version: 0.99.0
+    - - <
+      - !ruby/object:Gem::Version 
+        hash: 413
+        segments: 
+        - 0
+        - 99
+        - 7
+        version: 0.99.7
+  prerelease: false
+  requirement: *id012
+  name: mustache
+  type: :development
+- !ruby/object:Gem::Dependency 
+  version_requirements: &id013 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ~>
+      - !ruby/object:Gem::Version 
         hash: 13
         segments: 
         - 3
@@ -199,11 +222,11 @@ dependencies:
         - 7
         version: 3.1.7
   prerelease: false
-  requirement: *id012
+  requirement: *id013
   name: airbrake
   type: :development
 - !ruby/object:Gem::Dependency 
-  version_requirements: &id013 !ruby/object:Gem::Requirement 
+  version_requirements: &id014 !ruby/object:Gem::Requirement 
     none: false
     requirements: 
     - - ~>
@@ -215,11 +238,11 @@ dependencies:
         - 0
         version: 1.5.0
   prerelease: false
-  requirement: *id013
+  requirement: *id014
   name: nokogiri
   type: :development
 - !ruby/object:Gem::Dependency 
-  version_requirements: &id014 !ruby/object:Gem::Requirement 
+  version_requirements: &id015 !ruby/object:Gem::Requirement 
     none: false
     requirements: 
     - - ">="
@@ -239,8 +262,38 @@ dependencies:
         - 0
         version: 4.0.0
   prerelease: false
-  requirement: *id014
+  requirement: *id015
   name: activesupport
+  type: :development
+- !ruby/object:Gem::Dependency 
+  version_requirements: &id016 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  prerelease: false
+  requirement: *id016
+  name: statsd-ruby
+  type: :development
+- !ruby/object:Gem::Dependency 
+  version_requirements: &id017 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - <
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        - 7
+        - 0
+        version: 0.7.0
+  prerelease: false
+  requirement: *id017
+  name: i18n
   type: :development
 description: An easy to configure, easy to extend monitoring framework written in Ruby.
 email: god-rb@googlegroups.com
@@ -299,6 +352,9 @@ files:
 - lib/god/contacts/jabber.rb
 - lib/god/contacts/prowl.rb
 - lib/god/contacts/scout.rb
+- lib/god/contacts/sensu.rb
+- lib/god/contacts/slack.rb
+- lib/god/contacts/statsd.rb
 - lib/god/contacts/twitter.rb
 - lib/god/contacts/webhook.rb
 - lib/god/driver.rb
@@ -374,7 +430,10 @@ files:
 - test/test_process.rb
 - test/test_prowl.rb
 - test/test_registry.rb
+- test/test_sensu.rb
+- test/test_slack.rb
 - test/test_socket.rb
+- test/test_statsd.rb
 - test/test_sugar.rb
 - test/test_system_portable_poller.rb
 - test/test_system_process.rb
@@ -441,7 +500,10 @@ test_files:
 - test/test_process.rb
 - test/test_prowl.rb
 - test/test_registry.rb
+- test/test_sensu.rb
+- test/test_slack.rb
 - test/test_socket.rb
+- test/test_statsd.rb
 - test/test_sugar.rb
 - test/test_system_portable_poller.rb
 - test/test_system_process.rb

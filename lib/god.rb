@@ -90,9 +90,12 @@ load_contact(:email)
 load_contact(:jabber)
 load_contact(:prowl)
 load_contact(:scout)
+load_contact(:statsd)
 load_contact(:twitter)
 load_contact(:webhook)
 load_contact(:airbrake)
+load_contact(:slack)
+load_contact(:sensu)
 
 $:.unshift File.join(File.dirname(__FILE__), *%w[.. ext god])
 
@@ -158,7 +161,7 @@ end
 
 module God
   # The String version number for this package.
-  VERSION = '0.13.4'
+  VERSION = '0.13.6'
 
   # The Integer number of lines of backlog to keep for the logger.
   LOG_BUFFER_SIZE_DEFAULT = 100
