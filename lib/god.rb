@@ -161,7 +161,7 @@ end
 
 module God
   # The String version number for this package.
-  VERSION = '0.13.6'
+  VERSION = '0.13.7'
 
   # The Integer number of lines of backlog to keep for the logger.
   LOG_BUFFER_SIZE_DEFAULT = 100
@@ -490,8 +490,8 @@ module God
   def self.stop_all
     self.watches.sort.each do |name, w|
       Thread.new do
+        w.action(:stop)
         w.unmonitor if w.state != :unmonitored
-        w.action(:stop) if w.alive?
       end
     end
 
