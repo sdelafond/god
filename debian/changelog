@@ -1,3 +1,9 @@
+ruby-god (0.13.7-1) unstable; urgency=medium
+
+  * New upstream version 0.13.7
+
+ -- Sebastien Delafond <seb@debian.org>  Wed, 25 Nov 2015 15:03:44 +0100
+
 ruby-god (0.13.6-1) unstable; urgency=medium
 
   * Imported Upstream version 0.13.6
