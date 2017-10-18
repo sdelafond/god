@@ -1,3 +1,14 @@
+ruby-god (0.13.7-2) unstable; urgency=medium
+
+  * Remove transitional package god (Closes: #878859)
+  * Add debian/gbp.conf
+  * Bump compat level to 10
+  * Bump Standards-Version to 4.0.0
+  * Use https for Vcs-* URLs
+  * Build-Depend on debhelper >= 10
+
+ -- Sebastien Delafond <seb@debian.org>  Wed, 18 Oct 2017 08:52:40 +0200
+
 ruby-god (0.13.7-1) unstable; urgency=medium
 
   * New upstream version 0.13.7
