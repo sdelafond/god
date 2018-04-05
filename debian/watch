@@ -1,2 +1,2 @@
 version=3
-http://pkg-ruby-extras.alioth.debian.org/cgi-bin/gemwatch/god .*/god-(.*).tar.gz
+https://github.com/mojombo/god/tags .*/v(\d[\d\.]*)\.tar\.gz debian uupdate
