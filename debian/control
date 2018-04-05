@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Sebastien Delafond <seb@debian.org>
 Build-Depends: debhelper (>= 10~), gem2deb (>= 0.2.13~), ruby-mocha
 Standards-Version: 4.0.0
-Homepage: http://god.rubyforge.org/
+Homepage: https://github.com/mojombo/god
 Vcs-Git: https://salsa.debian.org/debian/ruby-god.git
 Vcs-Browser: https://salsa.debian.org/debian/ruby-god
 XS-Ruby-Versions: all
