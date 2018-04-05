@@ -1,5 +1,5 @@
 Source: ruby-god
-Section: ruby
+Section: admin
 Priority: optional
 Maintainer: Sebastien Delafond <seb@debian.org>
 Build-Depends: debhelper (>= 10~), gem2deb (>= 0.2.13~), ruby-mocha
